@@ -1,0 +1,5 @@
+#! /bin/bash
+
+xfce4-terminal --title=decon --hide-menubar --hide-borders --hide-toolbars &
+sleep 3 &&
+wmctrl -F -r decon -e 0,90,60,1200,680 && wmctrl -F -r decon -b add,sticky,below && wmctrl -F -r decon -b add,skip_pager,skip_taskbar
